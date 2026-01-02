@@ -4,12 +4,209 @@
   <meta charset="UTF-8" />
   <title>Vikash Tiwari | Flutter Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: var(--accent);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 26px;
+      background: var(--accent);
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Vikash Tiwari 👋</h1>
-  <h2>Flutter Developer</h2>
-  <p>4.5 Years Experience | BFSI | IBM</p>
-  <p>Email: tiwarivikash488@gmail.com</p>
-  <p>GitHub: https://github.com/iamvikashtiwari</p>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Vikash Tiwari</h1>
+    <p>Flutter Developer • BFSI Domain • 4+ Years Experience</p>
+    <a class="btn" href="mailto:tiwarivikash488@gmail.com">Contact Me</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <p class="muted">
+      Flutter Developer with 4+ years of experience building scalable, high-quality mobile applications,
+      specializing in BFSI (Banking, Financial Services & Insurance).  
+      Currently working at <b>IBM India</b>, with strong expertise in Clean Architecture, state management,
+      and secure API integrations including Aadhaar FaceRD authentication.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Flutter & Dart</div>
+      <div class="card">BLoC / Provider / GetX / MobX</div>
+      <div class="card">Clean Architecture & SOLID</div>
+      <div class="card">REST APIs & JSON</div>
+      <div class="card">Firebase</div>
+      <div class="card">Git, Bitbucket, Jira</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Flutter Developer – IBM India</h3>
+      <p class="muted">Nov 2024 – Present</p>
+      <p class="muted">
+        Application development, unit testing, code reviews, performance optimization,
+        and mentoring junior developers on clean architecture and best practices.
+      </p>
+    </div>
+    <br/>
+    <div class="card">
+      <h3>Flutter Developer – Sapphire Software Solutions</h3>
+      <p class="muted">Dec 2020 – Oct 2024</p>
+      <p class="muted">
+        Delivered multiple production apps, migrated legacy Flutter codebases,
+        integrated REST APIs, and implemented pixel-perfect Figma designs.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Equitas Bank Super App</h3>
+        <p class="muted">
+          Digital banking app with Re-KYC, Aadhaar FaceRD authentication,
+          Banker on Wheels, Account Unfreeze, and TDS modules.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mahindra Finance – Loans</h3>
+        <p class="muted">
+          NBFC super app with Aadhaar & PAN validation, pre/post-approved loan offers,
+          and farm equipment loan modules.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Adani Emcare</h3>
+        <p class="muted">
+          Occupational health management system with automated compliance tracking
+          and medical assessments.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aadhaar FaceRD Plugin</h3>
+        <p class="muted">
+          Open-source Flutter plugin published on pub.dev for biometric authentication.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <p class="muted">📧 tiwarivikash488@gmail.com</p>
+    <p class="muted">🔗 linkedin.com/in/vikash-tiwari-93130b19a</p>
+    <p class="muted">🐙 github.com/iamvikashtiwari</p>
+  </section>
+
+  <footer>
+    © 2026 Vikash Tiwari • Flutter Developer
+  </footer>
+
 </body>
 </html>
